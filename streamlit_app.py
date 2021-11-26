@@ -33,7 +33,8 @@ grade = form.slider("Grade", 1, 100, 60)
 submit = form.form_submit_button("Generate PDF")
 
 if submit:
-    html = template.render(
+    #html = template.render(
+        template.render(
         student=student,
         course=course,
         grade=f"{grade}/100",
